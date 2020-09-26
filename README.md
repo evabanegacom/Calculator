@@ -14,7 +14,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 Calculator -- [React-app]
-This project is part of the Microverse curriculum in Ruby on Rails module!
+This project is part of the Microverse curriculum in React&Redux module!
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
