@@ -1,27 +1,12 @@
 import React from 'react';
-// import Display from './display';
-// import ButtonPanel from './button_panel';
+import Display from './display';
+import ButtonPanel from './buttonPanel';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="button-controls">
+      <Display />
+      <ButtonPanel />
     </div>
   );
 }
