@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
-#button-controls {
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
-  max-width: 700px;
+  border: 1px solid red;
+  width: 700px;
 }
 
 .calc-display {
@@ -32,7 +37,10 @@
   height: 100px;
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid red;
+}
+
+.buttontn-group > * {
+  height: 100%;
 }
 
 .button-name {
@@ -41,6 +49,9 @@
   font-size: 20px;
   border: 1px solid #bbb;
   outline: none;
-  width: 30%;
   cursor: pointer;
+}
+
+.last-btns > :first-child {
+  flex: 2.03;
 }
