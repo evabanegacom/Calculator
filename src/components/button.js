@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ name }) => (
-  <button type="button">
+  <button  class='button-name' type="button">
     {name}
   </button>
 );
