@@ -4,7 +4,7 @@ import Button from './button';
 const ButtonPanel = () => (
   <div className="button-collection">
     <div className="button-group">
-      <Button name="AC" />
+      <Button name="AC" color="#E0E0E0" />
       <Button name="+/-" />
       <Button name="%" />
       <Button name="÷" />
