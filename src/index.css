@@ -55,3 +55,7 @@
 .last-btns > :first-child {
   flex: 2.03;
 }
+
+.colors {
+  color: #E0E0E0;
+}
