@@ -3,7 +3,6 @@ import Display from './display';
 import ButtonPanel from './buttonPanel';
 import calculate from '../logic/calculate';
 
-
 class App extends React.Component {
   constructor() {
     super();
