@@ -1,37 +1,37 @@
 import React from 'react';
 import Button from './button';
+import PropTypes from 'prop-types';
 
-const ButtonPanel = () => (
-  <div className="button-collection">
-    <div className="button-group">
-      <Button name="AC" color="colors" />
-      <Button name="+/-" color="colors" />
-      <Button name="%" color="colors" />
-      <Button name="÷" />
+const ButtonPanel = ({ handleClick }) => {
+  const buttonGroups = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
+
+  const orangeBtns = ['÷', 'x', '-', '+', '='];
+
+  const buttonList = buttonGroups.map(btnGrp => (
+    <div className="button-group" key={Math.random()}>
+      {
+        btnGrp.map(btn => (orangeBtns.includes(btn) ? <Button key={Math.random()} name={btn} handleClick={handleClick} /> /*eslint-disable-line*/
+          : btn === '0' ? <Button key={Math.random()} name={btn} color="#E0E0E0" wide handleClick={handleClick} />
+            : <Button key={Math.random()} name={btn} color="#E0E0E0" handleClick={handleClick} />))
+      }
     </div>
-    <div className="button-group">
-      <Button name="7" color="colors" />
-      <Button name="8" color="colors" />
-      <Button name="9" color="colors" />
-      <Button name="X" />
+  ));
+
+  return (
+    <div>
+      { buttonList}
     </div>
-    <div className="button-group">
-      <Button name="4" color="colors" />
-      <Button name="5" color="colors" />
-      <Button name="6" color="colors" />
-      <Button name="-" />
-    </div>
-    <div className="button-group">
-      <Button name="1" color="colors" />
-      <Button name="2" color="colors" />
-      <Button name="3" color="colors" />
-      <Button name="+" />
-    </div>
-    <div className="button-group last-btns">
-      <Button name="0" color="colors" />
-      <Button name="." color="colors" />
-      <Button name="=" />
-    </div>
-  </div>
-);
+  );
+};
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
+
 export default ButtonPanel;
