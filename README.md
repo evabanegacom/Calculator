@@ -48,7 +48,7 @@ To have this app on your pc, you need to:
 # Live Demo
 - (https://inherent-resolve.herokuapp.com/)
 
-![Screenshot](images/Calculator.png)
+![Screenshot](images/cal.png)
 
 ### Built With
 This project was built using these technologies.
